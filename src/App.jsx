@@ -6,6 +6,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import WrongPath from "./components/WrongPath";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/contact" exact element={<Contact />} />
         <Route path="*" exact element={<WrongPath />} />
       </Routes>
+      <Footer />
     </>
   );
 }
